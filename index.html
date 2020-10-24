@@ -1,98 +1,129 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cestovka</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cestovka</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <img src="images/logo.svg" alt="Cestovka logo" width="237" height="30" />
+        <nav class="navigation-header">
+          <a href="#">Last minute</a>
+          <a href="#">Destinace</a>
+          <a href="#">Časté otázky</a>
+        </nav>
+	</header>
 
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+	<section class="main-trips">
+	<div class="card-trip card-trip--large">
+      <img class="card-trip__image" src="images/palmy.jpg" alt="Palmy" />
+      <div class="card-trip__price">17&nbsp;600 Kč</div>
+      <h3 class="card-trip__title">Pohoda pod palmami</h3>
+	  <p class="card-trip__description">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+	</div>
 
-	<img src="images/logo.svg" alt="Cestovka logo" width="237" height="30">
+	<div class="card-trip card-trip--up">
+      <img class="card-trip__image" src="images/jezero2.jpg" alt="Jezero" />
+      <div class="card-trip__price">8&nbsp;490 Kč</div>
+      <h3 class="card-trip__title">Klid u jezera</h3>
+	</div>
 
-	<nav>
-		<a href="#">Last minute</a>
-		<a href="#">Destinace</a>
-		<a href="#">Časté otázky</a>
-	</nav>
+	<div class="card-trip card-trip--down">
+      <img class="card-trip__image" src="images/nakole.jpg" alt="Palmy" />
+      <div class="card-trip__price">4&nbsp;990 Kč</div>
+	  <h3 class="card-trip__title">Výlet na kole</h3>
+	</div>
+	</section>
 
+	  <!-- dalsi sekce -->
+	  <section class="benefits">
 
-	<img src="images/palmy.jpg" alt="Palmy">
-	<div>17&nbsp;600 Kč</div>
-	<h3>Pohoda pod palmami</h3>
-	<p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+      <img src="images/map.svg" alt="Ikona" />
+      <h3>Výhoda</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        saepe.
+      </p>
 
-	<img src="images/jezero2.jpg" alt="Jezero">
-	<div>8&nbsp;490 Kč</div>
-	<h3>Klid u jezera</h3>
+      <img src="images/plane.svg" alt="Ikona" />
+      <h3>Výhoda</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        saepe.
+      </p>
 
-	<img src="images/nakole.jpg" alt="Palmy">
-	<div>4&nbsp;990 Kč</div>
-	<h3>Výlet na kole</h3>
+      <img src="images/globe.svg" alt="Ikona" />
+      <h3>Výhoda</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        saepe.
+      </p>
 
+      <img src="images/shield.svg" alt="Ikona" />
+      <h3>Výhoda</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        saepe.
+      </p>
+	</section>
 
-	<!-- dalsi sekce -->
+      <!-- dalsi sekce -->
 
-	<img src="images/map.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+	  <section class="last-minute">
+      <h2>Last minute zájezdy</h2>
 
-	<img src="images/plane.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+      <img src="images/palmy.jpg" alt="Palmy" />
+      <div>17&nbsp;600 Kč</div>
+      <h3>Pohoda pod palmami</h3>
+      <p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
 
-	<img src="images/globe.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+      <img src="images/jezero2.jpg" alt="Palmy" />
+      <div>8&nbsp;490 Kč</div>
+      <h3>Klid u jezera</h3>
 
-	<img src="images/shield.svg" alt="Ikona">
-	<h3>Výhoda</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus saepe.</p>
+      <img src="images/nakole.jpg" alt="Palmy" />
+      <div>4&nbsp;990 Kč</div>
+      <h3>Výlet na kole</h3>
+	</section>
 
+      <!-- dalsi sekce -->
 
-	<!-- dalsi sekce -->
+	  <section class="news">
+      <h2>Novinky</h2>
 
-	<h2>Last minute zájezdy</h2>
+      <p>15. 8. 2020</p>
+      <h3>Titulek novinky</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione
+        aliquam repudiandae vitae dignissimos.
+      </p>
 
-	<img src="images/palmy.jpg" alt="Palmy">
-	<div>17&nbsp;600 Kč</div>
-	<h3>Pohoda pod palmami</h3>
-	<p>Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+      <p>15. 8. 2020</p>
+      <h3>Titulek novinky</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione
+        aliquam repudiandae vitae dignissimos.
+      </p>
 
-	<img src="images/jezero2.jpg" alt="Palmy">
-	<div>8&nbsp;490 Kč</div>
-	<h3>Klid u jezera</h3>
-
-	<img src="images/nakole.jpg" alt="Palmy">
-	<div>4&nbsp;990 Kč</div>
-	<h3>Výlet na kole</h3>
-
-
-	<!-- dalsi sekce -->
-
-	<h2>Novinky</h2>
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<p>15. 8. 2020</p>
-	<h3>Titulek novinky</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione aliquam repudiandae vitae dignissimos.</p>
-
-
-	<!-- dalsi sekce -->
-
-	<p>&copy2020, Web od A do Z #2</p>
-
-</body>
+      <p>15. 8. 2020</p>
+      <h3>Titulek novinky</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione
+        aliquam repudiandae vitae dignissimos.
+      </p>
+	</section>
+      <!-- dalsi sekce -->
+	<footer>
+	  <p>&copy2020, Web od A do Z #2</p>
+	</footer>
+    </div>
+  </body>
 </html>
