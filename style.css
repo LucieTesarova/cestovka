@@ -27,9 +27,9 @@ html {
   box-sizing: inherit;
 }
 
-body{
+body {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-container {
@@ -57,31 +57,31 @@ header {
 
 /* hlavni zajezdy */
 
-.main-trips{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+.main-trips {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
 
-.main-trips .card-trip--large{
-	grid-row: 2 span;
-	grid-column: 1/2;
+.main-trips .card-trip--large {
+  grid-row: 2 span;
+  grid-column: 1/2;
 }
 
-.main-trips .card-trip--up{
-	grid-row: 1/2;
-	grid-column: 2/3;
+.main-trips .card-trip--up {
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
-.main-trips .card-trip--down{
-	grid-row: 2/3;
-	grid-column: 2/3;
+.main-trips .card-trip--down {
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
-.card-trip__image{
-	width: 100%;
-	height: 100%;
+.card-trip__image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   left: 0px;
@@ -90,31 +90,31 @@ header {
   filter: brightness(75%);
 }
 
-.card-trip{
+.card-trip {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
   padding: 20px;
-  }
+}
 
-.card-trip__price{
+.card-trip__price {
   width: fit-content;
   background-color: #f03000;
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
-.card-trip__title--large{
+.card-trip__title--large {
   font-size: 28px;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* vyhody */
 
-.benefits{
+.benefits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
@@ -122,50 +122,80 @@ header {
   margin-top: 40px;
 }
 
-.card-benefit{
+.card-benefit {
   background-color: #e5e5e5;
   padding: 20px;
   text-align: center;
 }
 
-.card-benefit__image{
+.card-benefit__image {
   height: 40px;
   width: auto;
   object-fit: cover;
 }
 
-.card-benefit__title{
+.card-benefit__title {
   color: #f03000;
 }
 
 /* last minute */
 
-.last-minute{
+.last-minute {
   margin-top: 40px;
 }
 
-.last-minute-title{
+.last-minute-title {
   color: #f03000;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.last-minute-container{
+.last-minute-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
 
-.last-minute-container .card-trip--large{
+.last-minute-container .card-trip--large {
   grid-column: 2/3;
   grid-row: 2 span;
 }
 
-.last-minute-container .card-trip--up{
+.last-minute-container .card-trip--up {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
-.last-minute-container .card-trip--down{
+.last-minute-container .card-trip--down {
   grid-column: 1/2;
   grid-row: 2/3;
 }
+
+/* novinky */
+
+.news {
+  margin-top: 40px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.card-news {
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.card-news__title {
+  color: #f03000;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.card-news__date {
+  color: #888888;
+  margin: 0;
+}
+
