@@ -207,8 +207,6 @@ header{
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: auto;
   gap: 20px;
 }
 
@@ -225,6 +223,13 @@ header{
 .card-news__date {
   color: #888888;
   margin: 0;
+}
+
+@media screen and (min-width: 700px){
+  .news-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
 }
 
 /* paticka */
