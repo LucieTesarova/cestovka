@@ -1,2 +1,2 @@
-# cestovka
-Web page for travel agency.
+# Cestovka
+Webová stránka pro cestovní kancelář.
